@@ -143,8 +143,8 @@ void storeFrame(const vec4<float>* bodies, int nBodies, int frameNumber) {
     videoWriter.write(image);
     
     // Optional: Display the frame (comment out for faster processing)
-    // cv::imshow("N-body Simulation", image);
-    // cv::waitKey(1);
+    cv::imshow("N-body Simulation", image);
+    cv::waitKey(1);
     
     // Print progress every 100 frames
     if (frameNumber % 100 == 0) {

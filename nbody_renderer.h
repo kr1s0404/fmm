@@ -2,7 +2,17 @@
 #define NBODY_RENDERER_H
 
 #include <string>
-#include "fmm.h"  // For vec4 template
+
+// Simple vector templates to replace the ones from fmm.h
+template<typename T>
+struct vec3 {
+    T x, y, z;
+};
+
+template<typename T>
+struct vec4 {
+    T x, y, z, w;
+};
 
 // Set rendering parameters
 void setRenderingParameters(int width, int height, int fps, double maxScale, const std::string& filename);
